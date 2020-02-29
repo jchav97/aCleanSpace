@@ -1,6 +1,6 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
-const {MongoClient} = require('mongodb');
+// const {MongoClient} = require('mongodb');
 const app = express();
 
 app.engine('handlebars', exphbs());
@@ -36,6 +36,10 @@ app.get('/leaderBoards', (req, res) => {
 
 app.get('/post', (req, res) => {
 	res.render('post');
+});
+
+app.get('/signIn', (req, res) => {
+	res.render('signIn');
 });
 
 const port = process.env.PORT || 4000;
