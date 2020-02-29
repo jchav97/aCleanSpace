@@ -12,12 +12,12 @@ app.get('/about', (req, res) => {
 	res.render('about');
 });
 
-app.get('/events', (req, res) => {
-	res.render('events');
+app.get('/howYouCanHelp', (req, res) => {
+	res.render('howYouCanHelp');
 });
 
-app.get('/gallery', (req, res) => {
-	res.render('gallery');
+app.get('/leaderBoards', (req, res) => {
+	res.render('leaderBoards');
 });
 
 const port = process.env.PORT || 4000;
