@@ -1,7 +1,10 @@
 const express = require('express');
 const exphbs = require('express-handlebars');
+var favicon = require('serve-favicon');
 // const {MongoClient} = require('mongodb');
 const app = express();
+
+app.use(favicon(__dirname + '/public/images/favicon.ico'));
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
