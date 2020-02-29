@@ -9,23 +9,41 @@
 	<script src="https://kit.fontawesome.com/a10bbbdc83.js" crossorigin="anonymous"></script>
 	<style type="text/css">
 	.btn-circle{
-		width: 70px;
-		height: 70px;
-		padding: 10px 16px;
-		border-radius: 35px;
-		font-size: 12px;
-		text-align: center;
-		position:fixed;
-		bottom: 20px;
-		right: 20px;
+	  width: 70px;
+	  height: 70px;
+	  padding: 10px 16px;
+	  border-radius: 35px;
+	  font-size: 12px;
+	  text-align: center;
+	  position:fixed;
+	  bottom: 20px;
+	  right: 20px;
 	}
+
+	.postHeader {
+	  padding: 20px 20px;
+	  text-align: center;
+		align-items: center;
+	}
+	.postPadding{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.postBackground{
+		background-color: white;
+	}
+	body{
+		background-color:#f5f5f5;
+	}
+
+
 </style>
 </head>
 <body>
 	{{> navbar}}
 	<div class="container">
 		{{{body}}}
-			<button type="submit" class="btn-circle"> 	<i class="fas fa-pencil-alt"></i>  </button>
+			<a href="/post" role="button" class="btn btn-lg btn-circle btn-info" > 	<i class="fas fa-pencil-alt"></i>  </a>
 	</div>
 </body>
 </html>
