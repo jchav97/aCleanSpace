@@ -1,50 +1,19 @@
-<div class="container my-4">
-    <div class="jumbotron">
-        <h1 class="display-4 mb-2">Old creek cleanup!</h1>
-        <div class="row">
-            <div class="col-sm-6"><img src="static/0.0.jpg"></div>
-            <div class="col-sm-6"><img src="static/0.1.jpg"></div>
-        </div>
-        <hr class="my-4">
-        <p class="lead">I spent an afternoon cleaning up the old creek out by Fletcher. It was a long day, but the
-            results were worth it.</p>
-        <button class="btn btn-lg btn-success"><i class="fas fa-recycle"></i> 146</button>
-    </div>
+{{#each stories}}
 
-    <div class="jumbotron">
-        <h1 class="display-4 mb-2">Lunch spot lookin sliiick</h1>
-        <div class="row">
-            <div class="col-sm-6"><img src="static/1.0.jpg"></div>
-            <div class="col-sm-6"><img src="static/1.1.jpg"></div>
-        </div>
-        <hr class="my-4">
-        <p class="lead">Took an extra long lunch today so I could clean up my favorite spot to eat on my breaks. It's
-            nice being able to sit by the river without having to step over the trash.</p>
-        <button class="btn btn-lg btn-success"><i class="fas fa-recycle"></i> 113</button>
-    </div>
+ <div class="container my-4">
+    <div class="jumbotron" id={{@index}}>
+        <h1 class="display-4 mb-2"> {{this.title}}</h1>
+   
+    
+    
+    <p class="lead">{{this.desc}}</p>
+        <button class="btn btn-lg btn-success green-gradient">
+            
+            
+    <i class="fas fa-recycle"></i> {{this.category}}</button>
 
-    <div class="jumbotron">
-        <h1 class="display-4 mb-2">Trail Cleanup 🤗🤗🤗!</h1>
-        <div class="row">
-            <div class="col-sm-6"><img src="static/2.0.jpg"></div>
-            <div class="col-sm-6"><img src="static/2.1.jpg"></div>
-        </div>
-        <hr class="my-4">
-        <p class="lead">I've been taking Bonzai through this trail for a few weeks now and I was getting tired of seeing
-            all the rubbish lying around. So I decided to get to work!</p>
-        <button class="btn btn-lg btn-success"><i class="fas fa-recycle"></i> 98</button>
-    </div>
-
-    <div class="jumbotron">
-        <h1 class="display-4 mb-2">Riverside Service</h1>
-        <div class="row">
-            <div class="col-sm-6"><img src="static/3.0.jpg"></div>
-            <div class="col-sm-6"><img src="static/3.1.jpg"></div>
-        </div>
-        <hr class="my-4">
-        <p class="lead">Decided to take the kids out and clean up the dropoff next to our favorite bike trail. It was so
-            rewarding to see the kids enjoying contributing to their community!! 🥰🥰</p>
-        <button class="btn btn-lg btn-success"><i class="fas fa-recycle"></i> 77</button>
-    </div>
+</div> 
+   
 
 </div>
+{{/each}}

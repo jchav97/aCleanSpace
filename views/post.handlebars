@@ -1,24 +1,19 @@
-
 <div class="container border postBackground">
   <h1 class="postHeader">Post Your Story</h1>
-  <form>
+  <form action="/stories" method="POST">
     <div class="form-group postPadding">
-      <label for="postTitle">Title</label>
-      <input type="text" class="form-control" id="postTitle" placeholder="Here is my title!">
+      <label for="title">Title</label>
+      <input type="text" class="form-control" name="title" id="title" placeholder="Here is my title!">
     </div>
-    <div class="row postPadding">
-      <div class="custom-file col mx-3 postPadding">
-        <input type="file" class="custom-file-input" id="customFile">
-        <label class="custom-file-label" for="customFile">Choose file</label>
-      </div>
-      <div class="custom-file col mx-3 postPadding">
-        <input type="file" class="custom-file-input" id="customFile">
-        <label class="custom-file-label" for="customFile">Choose file</label>
-      </div>
-    </div>
+
     <div class="form-group postPadding">
-      <label for="postDescription">Description</label>
-      <textarea class="form-control" id="postDescriptin" rows="5"></textarea>
+      <label for="desc">Description</label>
+      <textarea class="form-control" id="desc" rows="5" name="desc"></textarea>
+    </div>
+
+    <div class="form-group postPadding">
+      <label for="category">Category</label>
+      <input type="text" class="form-control" id="category" name="category" placeholder="Here is my category!">
     </div>
 
     <div class="postHeader">
