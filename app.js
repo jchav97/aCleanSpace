@@ -5,6 +5,7 @@ var favicon = require('serve-favicon');
 const app = express();
 
 app.use(favicon(__dirname + '/public/images/favicon.ico'));
+app.use('/static', express.static('public/images'));
 
 app.engine('handlebars', exphbs());
 app.set('view engine', 'handlebars');
